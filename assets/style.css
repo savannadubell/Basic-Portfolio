@@ -6,8 +6,7 @@ html {
 body {
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	background: #efefef url("assets/images/..");
-	background-color: #efefef;
+	background-image: url("/Users/savannadubell/Documents/Bootcamp/Homework/Basic-Portfolio/assets/images/white-waves.png");
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,10 +26,6 @@ a {
 	text-decoration: none;
 }
 
-/* **************************
-Layout 
-************************** */
-
 /* Header */
 header {
 	border-bottom: 2px solid #cccccc;
@@ -45,7 +40,6 @@ header .container {
 }
 
 .name, .nav {
-	/* I hate floats, so I avoid them whenever I can */
 	display: inline-block;
     vertical-align: middle;
     margin: 0;
@@ -98,7 +92,6 @@ header .container {
 }
 
 .nav ul li+li {
-	/* See https://www.jackreichert.com/2011/07/how-to-add-a-divider-between-menu-items-in-css-using-only-one-selector/ */
 	border-left: 1px solid #cccccc;
 }
 
@@ -147,21 +140,17 @@ img.headshot {
 	
 }
 .portfolio-item {
-	display: inline-block;
+	display: block;
 	position: relative;
 	overflow: auto;
-	/* margin: 25px 25px 25px 25px; */
+	margin: 25px 25px 25px 25px;
 	width: 270px;
 	height: 200px;
 	/* transition: transform .2s ease-out; */
 }
 
-/* .portfolio-item:nth-child(even) {
+.portfolio-item:nth-child(even) {
 	margin-left: 25px;
-} */
-
-.portfolio-item:hover {
-	transform: rotate(-4deg) scale(1.1, 1.1);
 }
 
 .item-name {
@@ -171,6 +160,7 @@ img.headshot {
 	text-align: center;
 	background-color: #4aaaa5;
 	width: 270px;
+	height: 50px;
 	padding: 1em;
 	color: #ffffff;
 	z-index: 1000; 
